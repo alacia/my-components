@@ -1,0 +1,130 @@
+/* CSS reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Flexbox pozícionálás */
+
+body {
+  background: url('http://www.visitbekes.hu/download.fcgi/19976_2_1_Sarkad_-_legi1.jpg') no-repeat center center fixed;
+  /*background-color: rgba(50,100,200,.7);*/
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Méretezés, pozícionálás */
+
+#card {
+  height: 95%;
+  width: 450px;
+  max-width: calc(100vw - 20px);
+  margin: 10 auto;
+}
+
+#head {
+  width: 100%;
+}
+
+#info {
+  width: 95%;
+  margin: -80px auto 0;
+  padding: 5px;
+  position: relative;
+}
+
+#content {
+  
+  padding: 5%;
+}
+
+#about {
+  position: relative;
+  padding: 10px
+}
+
+#contact {
+  max-width: 150px;
+  padding: 5px;
+  margin: 0 auto;
+}
+
+#head, #contact {
+  text-align: center;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+/* Formázás */
+
+h2 {
+  letter-spacing: 2px;
+  font-variant: small-caps;
+}
+
+a:hover {
+  color: black;
+}
+
+#card {
+  font-family: Tahoma, Ariel, Sans-serif;
+  background-color: hsla(0, 0%, 100%, .5);
+  box-shadow: hsla(0, 0%, 0%, .8) 10px 10px 80px;
+}
+
+#info {
+  background: rgba(0, 0, 0, .3);
+  color: white;
+}
+
+#card, img, #info, #contact {
+  border-radius: 10px;
+}
+
+#contact {
+  background-color: rgb(255, 255, 255);
+}
+
+.fb {
+  color: #4267b2;
+}
+
+.gp {
+  color: #dd4f43;
+}
+
+.yt {
+  color: red;
+}
+
+/* Kép méretezés és formázás */
+
+.img {
+  width: 95%;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  filter: grayscale(40%);
+}
+
+.img:hover {
+  transform: scale(1.05);
+  filter: grayscale(10%);
+}
+
+/* Contact links */
+
+ul {
+  list-style-type: none;
+  padding-top: 5px;
+}
+
+li {
+  display: inline;
+}
