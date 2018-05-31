@@ -1,0 +1,1 @@
+Egy egyszerű blog fejrész (header)
